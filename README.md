@@ -45,8 +45,14 @@ java -cp target/openai-test-1.0-SNAPSHOT.jar com.example.OpenAIApp
 The application:
 1. Reads the OpenAI API key from the `OPENAI_API_KEY` environment variable
 2. Initializes a connection to OpenAI using LangChain4J
-3. Sends a simple message to the GPT-3.5-turbo model
+3. Sends a simple message to the GPT-3.5-turbo model (cost-optimized)
 4. Displays the response from OpenAI
+
+## Cost Optimization
+
+This project uses **GPT-3.5 Turbo**, one of the most cost-effective OpenAI models. If you need even cheaper options, consider:
+- **GPT-4o mini**: Slightly more capable than GPT-3.5 Turbo
+- **Ollama**: Free local alternative for development (see `install-ollama.sh`)
 
 ## Dependencies
 
